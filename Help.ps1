@@ -75,6 +75,10 @@ Write-Host "  Email 1   -> Opens WRUS Gmail only"
 Write-Host "  Email 2   -> Opens User's Gmail only"
 
 Write-Host ""
+Write-Host "Hosts" -ForegroundColor Green
+Write-Host "  Hosts -> Opens hosts file with administrator elevation"
+
+Write-Host ""
 Write-Host "Inventory" -ForegroundColor Green
 Write-Host "  Inventory  -> Opens WRUS Portal Consumable Database for inventory"
 
@@ -97,10 +101,6 @@ Write-Host "  Monday    -> Like Daily but opens additional Monday tasks"
 Write-Host ""
 Write-Host "ODTS" -ForegroundColor Green
 Write-Host "  ODTS      -> Opens browser and goes directly to ODTS website"
-
-Write-Host ""
-Write-Host "OpenHosts" -ForegroundColor Green
-Write-Host "  OpenHosts -> Opens hosts file with administrator elevation"
 
 Write-Host ""
 Write-Host "PDS" -ForegroundColor Green
