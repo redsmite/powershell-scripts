@@ -13,6 +13,30 @@ param (
 
 $taskFile = "C:\Scripts\tasks.csv"
 
+# ── Motivational Quotes ───────────────────────────
+$quotes = @(
+    "Do it now. Sometimes 'later' becomes 'never'.",
+    "You don't have to be great to start, but you have to start to be great.",
+    "The pain of regret is worse than the pain of hard work.",
+    "Stop waiting for the perfect moment. Take the moment and make it perfect.",
+    "Either you run the day or the day runs you.",
+    "Done is better than perfect.",
+    "What you do today can improve all your tomorrows.",
+    "Don't watch the clock; do what it does. Keep going.",
+    "Dream big. Start small. Act now.",
+    "The secret to getting ahead is getting started.",
+    "You will never always be motivated. You have to learn to be disciplined.",
+    "One day or day one. You decide.",
+    "Someday is not a day of the week.",
+    "Work hard in silence. Let success make the noise.",
+    "Small progress is still progress.",
+    "Your future self is watching you right now through memories.",
+    "Discipline is choosing between what you want now and what you want most.",
+    "Don't stop when you're tired. Stop when you're done.",
+    "If not now, when? If not you, who?",
+    "The only way out is through."
+)
+
 # ── Ensure task file exists ───────────────────────
 if (-not (Test-Path $taskFile)) {
     Set-Content $taskFile "ID,Description,Date"
@@ -29,7 +53,6 @@ if ($Action.ToLower() -eq "add") {
     $id   = "T" + (Get-Date -Format "yyMMddHHmmss")
     $date = Get-Date -Format "yyyy-MM-dd HH:mm"
 
-    # Escape commas in description
     $safeDesc = $description -replace '"', '""'
     Add-Content $taskFile "`"$id`",`"$safeDesc`",`"$date`""
 
@@ -97,5 +120,10 @@ else {
     Write-Host "========================================" -ForegroundColor Yellow
     Write-Host "  Total: $($tasks.Count) task(s)" -ForegroundColor Yellow
     Write-Host "========================================" -ForegroundColor Yellow
+
+    # ── Random Motivational Quote ─────────────────
+    $quote = $quotes | Get-Random
+    Write-Host ""
+    Write-Host "  >> $quote" -ForegroundColor Magenta
     Write-Host ""
 }
