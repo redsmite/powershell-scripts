@@ -100,7 +100,11 @@ Write-Host "  Monday    -> Like Daily but opens additional Monday tasks"
 
 Write-Host ""
 Write-Host "ODTS" -ForegroundColor Green
-Write-Host "  ODTS      -> Opens browser and goes directly to ODTS website"
+Write-Host "  ODTS            -> Opens browser and goes directly to DNIIS to login"
+Write-Host "  ODTS inbox      -> Opens ODTS Inbox"
+Write-Host "  ODTS outbox     -> Opens ODTS Outbox"
+Write-Host "  ODTS wrus       -> Opens WRUS Dashboard"
+Write-Host "  ODTS tms        -> Opens TMS Dashboard"
 
 Write-Host ""
 Write-Host "PDS" -ForegroundColor Green
