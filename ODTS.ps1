@@ -1,7 +1,7 @@
 # ODTS.ps1
 # Opens ODTS and related websites
 # Usage:
-#   ODTS          -> Opens main ODTS website
+#   ODTS          -> Opens DNIIS
 #   ODTS inbox    -> Opens ODTS Inbox
 #   ODTS outbox    -> Opens ODTS Outbox
 #   ODTS wrus     -> Opens WRUS Dashboard

@@ -44,7 +44,9 @@ Write-Host "  Create TEV      -> Opens TEV Folder"
 
 Write-Host ""
 Write-Host "Daily" -ForegroundColor Green
-Write-Host "  Daily     -> Opens daily tasks and the list of task based on the database, open once to begin daily task"
+Write-Host "  Daily                                       -> Opens daily tasks and the list of task based on the database"
+Write-Host "  Daily <four digit number military time>     -> saves the time in data to the database"
+Write-Host "  Daily in                                    -> shows the latest date time-in entry in the database"
 
 Write-Host ""
 Write-Host "Dev" -ForegroundColor Green
