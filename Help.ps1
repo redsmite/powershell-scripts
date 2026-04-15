@@ -8,14 +8,14 @@ Write-Host "========================================" -ForegroundColor Yellow
 
 Write-Host ""
 Write-Host "AI" -ForegroundColor Green
-Write-Host "  AI                           -> Opens all AI tools"
-Write-Host "  AI 1 | gem | gemini          -> Opens Gemini only"
-Write-Host "  AI 2 | chat | chatgpt        -> Opens ChatGPT only"
-Write-Host "  AI 3 | claude | claud        -> Opens Claude only"
-Write-Host "  AI 4 | note | notebook       -> Opens NotebookLM only"
-Write-Host "  AI 5 | perp | perplexity     -> Opens Perplexity only"
-Write-Host "  AI 6 | grok                  -> Opens Grok only"
-Write-Host "  AI 7 | canva                 -> Opens Canva"
+Write-Host "  AI                            -> Opens all AI tools"
+Write-Host "  AI 1 | gem | gemini           -> Opens Gemini only"
+Write-Host "  AI 2 | chat | chatgpt         -> Opens ChatGPT only"
+Write-Host "  AI 3 | claude | claud         -> Opens Claude only"
+Write-Host "  AI 4 | note | notebook        -> Opens NotebookLM only"
+Write-Host "  AI 5 | perp | perplexity      -> Opens Perplexity only"
+Write-Host "  AI 6 | grok                   -> Opens Grok only"
+Write-Host "  AI 7 | canva                  -> Opens Canva"
 
 Write-Host ""
 Write-Host "CCTV" -ForegroundColor Green
@@ -44,9 +44,9 @@ Write-Host "  Create TEV      -> Opens TEV Folder"
 
 Write-Host ""
 Write-Host "Daily" -ForegroundColor Green
-Write-Host "  Daily                                       -> Opens daily tasks and the list of task based on the database"
-Write-Host "  Daily <four digit number military time>     -> saves the time in data to the database"
-Write-Host "  Daily in                                    -> shows the latest date time-in entry in the database"
+Write-Host "  Daily                                        -> Opens daily tasks and the list of task based on the database"
+Write-Host "  Daily <four digit number military time>      -> saves the time in data to the database"
+Write-Host "  Daily in                                     -> shows the latest date time-in entry in the database"
 
 Write-Host ""
 Write-Host "Dev" -ForegroundColor Green
@@ -102,15 +102,21 @@ Write-Host "  Monday    -> Like Daily but opens additional Monday tasks"
 
 Write-Host ""
 Write-Host "ODTS" -ForegroundColor Green
-Write-Host "  ODTS            -> Opens browser and goes directly to DNIIS to login"
-Write-Host "  ODTS inbox      -> Opens ODTS Inbox"
-Write-Host "  ODTS outbox     -> Opens ODTS Outbox"
-Write-Host "  ODTS wrus       -> Opens WRUS Dashboard"
-Write-Host "  ODTS tms        -> Opens TMS Dashboard"
+Write-Host "  ODTS             -> Opens browser and goes directly to DNIIS to login"
+Write-Host "  ODTS inbox       -> Opens ODTS Inbox"
+Write-Host "  ODTS outbox      -> Opens ODTS Outbox"
+Write-Host "  ODTS wrus        -> Opens WRUS Dashboard"
+Write-Host "  ODTS tms         -> Opens TMS Dashboard"
+
+Write-Host ""
+Write-Host "Open" -ForegroundColor Green
+Write-Host "  Open <parameter> -> Opens mapped local/OneDrive folders"
+Write-Host "  Parameters: document, download, desktop, personal, admin, library,"
+Write-Host "              medical, to, tp, picture, music"
 
 Write-Host ""
 Write-Host "PDS" -ForegroundColor Green
-Write-Host "  PDS       -> Opens Personal Data Sheet and Training Certificates"
+Write-Host "  PDS       -> Opens Personal Data Sheet, Drive PDS and Training Certificates"
 
 Write-Host ""
 Write-Host "Ping" -ForegroundColor Green
@@ -118,19 +124,19 @@ Write-Host "  Ping      -> Checks network connectivity"
 
 Write-Host ""
 Write-Host "Proc" -ForegroundColor Green
-Write-Host "  Proc        -> Opens main Finance and Procurement folder"
-Write-Host "  Proc PPMP   -> Opens PPMP folder"
-Write-Host "  Proc WFP    -> Opens WFP and Budget Proposal folder"
-Write-Host "  Proc AB     -> Opens Annex A & B folder"
-Write-Host "  Proc MS     -> Opens Market Study folder"
+Write-Host "  Proc         -> Opens main Finance and Procurement folder"
+Write-Host "  Proc PPMP    -> Opens PPMP folder"
+Write-Host "  Proc WFP     -> Opens WFP and Budget Proposal folder"
+Write-Host "  Proc AB      -> Opens Annex A & B folder"
+Write-Host "  Proc MS      -> Opens Market Study folder"
 
 Write-Host ""
 Write-Host "Reviewer" -ForegroundColor Green
-Write-Host "  Reviewer          -> Opens main Reviewer folder"
-Write-Host "  Reviewer water    -> Opens Water-related PDFs"
-Write-Host "  Reviewer records  -> Opens Records-related PDFs"
-Write-Host "  Reviewer csc      -> Opens CSC-related PDFs"
-Write-Host "  Reviewer lands    -> Opens Lands-related PDF"
+Write-Host "  Reviewer           -> Opens main Reviewer folder"
+Write-Host "  Reviewer water     -> Opens Water-related PDFs"
+Write-Host "  Reviewer records   -> Opens Records-related PDFs"
+Write-Host "  Reviewer csc       -> Opens CSC-related PDFs"
+Write-Host "  Reviewer lands     -> Opens Lands-related PDF"
 
 Write-Host ""
 Write-Host "Scan" -ForegroundColor Green
@@ -146,7 +152,11 @@ Write-Host "  Search <term>   -> Searches Google (supports multiple words)"
 
 Write-Host ""
 Write-Host "Shared" -ForegroundColor Green
-Write-Host "  Shared    -> Opens shared drive (\\10.26.82.1)"
+Write-Host "  Shared           -> Opens main shared drive (\\10.26.82.1)"
+Write-Host "  Shared lpdd      -> Opens Shared LPDD folder"
+Write-Host "  Shared hizelle   -> Opens Hizelle's shared folder"
+Write-Host "  Shared kym       -> Opens Kym's shared folder"
+Write-Host "  Shared wrus      -> Opens WRUS shared folder"
 
 Write-Host ""
 Write-Host "Shutdown" -ForegroundColor Green
